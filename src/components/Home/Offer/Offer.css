@@ -1,0 +1,15 @@
+.Offer-text{
+color: white;
+}
+.offer-container
+{
+    background-color: #0b2153 ;
+    /* #102961 */
+}
+.offerCard{
+    background-color:rgb(255, 255, 255);
+    height:80px;
+}
+.offer-part{
+    background-color:#ffffff;
+}
