@@ -1,35 +1,30 @@
 import React, { useState } from 'react';
-import ReviewCard from './../ReviewCard.js/ReviewCard';
+import ReviewCard from '../ReviewCard/ReviewCard';
 
 const Review = () => {
 
-    const [review , setReview] = useState({});
-
+    const [review , setReview] = useState([]);
+          console.log(review); 
     // data load to database
-    fetch('http://localhost:5000/review')
+    fetch('http://localhost:5000/review2')
         .then((response) => response.json())
         .then((review) => {
             console.log(review)
-            setReview(review[0])
+            setReview(review)
         })
     return (
-        <section className="Testimonial-section container my-5">
+        <section className=" container my-5">
             <h4 className="text-warning text-center my-5">REVIEWS</h4>
-            <div className="row">
-                {/* {
-                    Testimonials.map(Testimonial => <TestimonialCard key={Testimonial.id} Testimonial={Testimonial} />)
-                } */}
-                
+            <div className="row container">
+            {
+                review.map(rev=><ReviewCard review={rev}/>)
+            }
+            </div>
+            {/* <ReviewCard review={review}/> */}
+            {/* <div className="row"> 
                 <ReviewCard review={review}/>
-                {/* <TestimonialCard  review={review} />) */}
-                
-                
-            </div>
-            <div className="">
-                {/* <h5>{review.name}</h5>
-                <h6>{review.company}</h6>
-                <p>{review.description}</p> */}
-            </div>
+            </div> */}
+    
         </section>
     );
 };

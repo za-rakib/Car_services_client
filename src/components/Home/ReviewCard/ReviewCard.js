@@ -13,9 +13,9 @@ const ReviewCard = ({review}) => {
         setColor(newColor);
     }
     return (
-        <div className=" col-md-3 ">
+        <div className="col-md-3">
 
-        <div className="d-flex">
+        <div className="">
             <div className="align-self-center" >
                 <h5>{review.name}</h5>
                 <br />
