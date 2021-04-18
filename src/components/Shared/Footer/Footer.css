@@ -1,6 +1,6 @@
 .footer-area{
     /* background-image: url(../../../images/footer-bg.png); */
-    background-size: cover;
+   background-color: rgb(250, 231, 207);
 }
 
 .footer-area li{

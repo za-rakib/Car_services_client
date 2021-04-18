@@ -25,7 +25,7 @@ const serviceData = [
 ]
 const Services = () => {
     return (
-        <section className="services-container mt-5">
+        <section className="services-container mt-5" id='services'>
             <div className="text-center">
                 <h4>What we do</h4>
                 <h2>Quality Service Opportunity</h2>
