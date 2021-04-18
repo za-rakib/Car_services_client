@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () => {
+  
     return (
         <nav className="navbar navbar-expand-lg">
 
@@ -28,7 +29,7 @@ const Navbar = () => {
                         <Link className="nav-link mr-3" to="/contactUs">Contact Us</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link mr-3" to="/login">Login</Link>
+                        <Link className="nav-link mr-3" to="/login" >Login</Link>
                     </li>
                 </ul>
             </div>

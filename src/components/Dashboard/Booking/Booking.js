@@ -54,7 +54,7 @@ const Booking = () => {
             <div className="col-md-10">
                 <div className="row">
                     <div className="col-md-6">
-                        <h4 style={{}} className="m-4">Booking</h4>
+                        <h4 style={{}} className="text-center m-5 ml-5">Booking</h4>
                     </div>
                     <div className="col-md-6">
                         <h4 style={{}} className="text-warning m-4">{loggedInUser.displayName}</h4>

@@ -10,7 +10,7 @@ const LoginAdmin = () => {
             <div className="col-md-2">
                 
             </div>
-            <div className="col-md-10">
+            <div className=" d-flex justify-content-center col-md-10">
                 <div className="row">
                     <div className="col-md-6">
                         <h4 style={{}} className="m-4">Admin</h4>
@@ -20,7 +20,7 @@ const LoginAdmin = () => {
                     </div>
                 </div>
                 <form action="" method="POST" style={{width:'75%',margin: '0 auto' }} className="bg-light m-5 p-5">
-                    <input type="email" className="form-control" placeholder="iqbal@gmail.com" required />
+                    <input type="email" className="form-control" placeholder="phpzarakib@gmail.com" required />
                     <br/>
                     <input type="submit" value="Submit" className="btn btn-warning" />
                 </form>

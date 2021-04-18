@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faGripHorizontal, faPlus,  faShoppingBag , faUser } from '@fortawesome/free-solid-svg-icons';
+
+import Sidebar from '../Sidebar/Sidebar';
 
 
 const AdminDashboard = () => {
@@ -37,51 +36,23 @@ const AdminDashboard = () => {
     }
     return (
         <div className="row">
-            <div className="col-md-2">
-                <div className="sidebar d-flex flex-column justify-content-between py-5 px-5" style={{ height: '100vh' }}>
-                    <ul className="">
-                        <li>
-                            <Link to="/home" className="text-white">
-                                <FontAwesomeIcon icon={faHome} /> <span>Home</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/customerDashboard" className="text-white">
-                                <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/admin" className="text-white">
-                                <FontAwesomeIcon icon={faUser} /> <span>Make Admin</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/orderList" className="text-white">
-                                <FontAwesomeIcon icon={faShoppingBag} /> <span>Order List</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/addService" className="text-white">
-                                <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
-                            </Link>
-                        </li>
-                    </ul>
 
-                </div>
+            <div className="col-md-3">    
+                <Sidebar/>
             </div>
-            <div className="col-md-10">
+            <div className="col-md-9 from-cal">
                 <div className="row">
-                    <div className="col-md-6">
-                        <h4 style={{}} className="m-4">Admin</h4>
+                    <div className="">
+                        <h4 style={{}} className="pl-5 m-5">Admin</h4>
                     </div>
-                    <div className="col-md-6 ">
+                    <div className="">
                         <h4 style={{}} className="text-warning m-4">{info.name }</h4>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit} action="" method="POST" style={{ width: '75%', margin: '0 auto' }} className="bg-light m-5 p-5">
-                <input onBlur={handleBlur} type="name" name="name" className="form-control" placeholder="iqbal" required />
+                <input onBlur={handleBlur} type="name" name="name" className="form-control" placeholder="Rakib" required />
                     <br />
-                    <input onBlur={handleBlur} type="email" name="adminEmail" className="form-control" placeholder="iqbal@gmail.com" required />
+                    <input onBlur={handleBlur} type="email" name="adminEmail" className="form-control" placeholder="phpzarakib@gmail.com" required />
                     <br />
                     <input onBlur={handleBlur} type="password" name="password" className="form-control" placeholder="password" required />
                     <br />

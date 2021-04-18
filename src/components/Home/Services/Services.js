@@ -4,6 +4,7 @@ import quality from '../../../images/quality2.png';
 import expert from '../../../images/expert.png'
 import modern from '../../../images/modern.jpg'
 import online from '../../../images/online.png'
+import Navbar from '../../Shared/Navbar/Navbar';
 
 const serviceData = [
     {

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './sidebar.css';
 import React from 'react';
-import { a, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faGripHorizontal, faCommentAlt, faCartPlus, faShoppingBag, faUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,7 +16,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/customerDashboard" className="text-white">
+                    <Link to="/dashboard" className="text-white">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
                     </Link>
                 </li>
@@ -36,7 +36,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/review" className="text-white">
+                    <Link to="/review2" className="text-white">
                         <FontAwesomeIcon icon={faCommentAlt} /> <span>Review</span>
                     </Link>
                 </li>

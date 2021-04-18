@@ -17,6 +17,7 @@ import Review from './components/Home/Review/Review';
 import OrderList from './components/Dashboard/OrderList/OrderList';
 import AddService from './components/Dashboard/AddService/AddService';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
+import Review2 from './components/Dashboard/Review/Review2';
 export const UserContext = createContext();
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/login">
+            <Review/>
+          </Route>
           <PrivateRoute path="/dashboard/:servicesType">
             <MainDashboard />
           </PrivateRoute>
@@ -46,8 +50,8 @@ function App() {
           <PrivateRoute path="/orderList">
             <OrderList />
           </PrivateRoute>
-          <PrivateRoute path="/review">
-            <Review />
+          <PrivateRoute path="/review2">
+            <Review2/>
           </PrivateRoute>
           <PrivateRoute path="/booking">
             <Booking />
